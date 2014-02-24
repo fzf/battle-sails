@@ -1,0 +1,1 @@
+EmberJade.ApplicationAdapter = DS.FixtureAdapter;
