@@ -1,4 +1,4 @@
-var EmberJade = window.EmberJade = Ember.Application.create();
+var Battle = window.Battle = Ember.Application.create();
 
 /* Order and include as you please. */
 require('scripts/controllers/*');

@@ -1,4 +1,4 @@
-EmberJade.UserEditRoute = Ember.Route.extend({
+Battle.UserEditRoute = Ember.Route.extend({
   model: function(params) {
     return this.get('store').find('user', this.modelFor('user').id);
   },

@@ -15,7 +15,7 @@
     "trailing": false,
     "smarttabs": true,
     "globals": {
-        "EmberJade": true,
+        "Battle": true,
         "jQuery": true,
         "Ember": true,
         "Handlebars": true,

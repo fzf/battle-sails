@@ -1,2 +1,2 @@
-EmberJade.UsersView = Ember.View.extend({
+Battle.UsersView = Ember.View.extend({
 });

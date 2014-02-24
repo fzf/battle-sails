@@ -1,4 +1,4 @@
-EmberJade.UserEditController = Ember.ObjectController.extend({
+Battle.UserEditController = Ember.ObjectController.extend({
   needs: 'user',
   actions: {
     save: function(){

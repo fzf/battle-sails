@@ -1,2 +1,2 @@
-EmberJade.UserEditView = Ember.View.extend({
+Battle.UserEditView = Ember.View.extend({
 });

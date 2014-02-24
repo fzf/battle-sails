@@ -1,10 +1,10 @@
 /*global Ember*/
-EmberJade.User = DS.Model.extend({
+Battle.User = DS.Model.extend({
     name: DS.attr('string')
 });
 
 // probably should be mixed-in...
-EmberJade.User.reopen({
+Battle.User.reopen({
   attributes: function(){
     var model = this;
     return Ember.keys(this.get('data')).map(function(key){
@@ -14,20 +14,20 @@ EmberJade.User.reopen({
 });
 
 // delete below here if you do not want fixtures
-EmberJade.User.FIXTURES = [
-  
+Battle.User.FIXTURES = [
+
   {
     id: 0,
-    
+
     name: 'foo'
-    
+
   },
-  
+
   {
     id: 1,
-    
+
     name: 'foo'
-    
+
   }
-  
+
 ];

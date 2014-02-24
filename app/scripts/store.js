@@ -1,1 +1,1 @@
-EmberJade.ApplicationAdapter = DS.FixtureAdapter;
+Battle.ApplicationAdapter = DS.FixtureAdapter;
