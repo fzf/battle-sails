@@ -1,0 +1,1 @@
+Battle.ApplicationAdapter = DS.FixtureAdapter;
