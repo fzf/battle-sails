@@ -186,6 +186,10 @@ module.exports = function(grunt) {
         }
       }
     },
+    sails: {
+        dist: {
+        }
+    },
     useminPrepare: {
       html: '.tmp/index.html',
       options: {
@@ -334,7 +338,7 @@ module.exports = function(grunt) {
       'concurrent:server',
       'neuter:app',
       'copy:fonts',
-      'connect:livereload',
+      'sails',
       'open',
       'watch'
     ]);

@@ -21,7 +21,9 @@
     "grunt-contrib-less": "~0.9.0",
     "grunt-contrib-coffee": "~0.7.0",
     "ember-sockets": "~0.3.0",
-    "socket.io": "~0.9.16"
+    "socket.io": "~0.9.16",
+    "passport": "~0.2.0",
+    "grunt-sails": "0.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
