@@ -36,12 +36,19 @@ var jsFilesToInject = [
   // to the Sails backend with some example code
   'js/connection.example.js',
 
+  "bower_components/jquery/jquery.js",
+  "bower_components/handlebars/handlebars.runtime.js",
+  'bower_components/ember/ember.js',
+  'bower_components/ember-data/ember-data.js',
+
+  'app/**/*.js',
   //
   // *->    you might put other dependencies like jQuery or Angular here   <-*
   //
 
   // All of the rest of your app scripts
   'js/**/*.js'
+
 ];
 
 
