@@ -116,7 +116,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
+        cssDir: '.tmp/public/styles',
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
@@ -262,30 +262,6 @@ module.exports = function (grunt) {
         'htmlmin'
       ]
     },
-    emberTemplates: {
-      options: {
-        templateName: function (sourceFile) {
-          var templatePath = yeomanConfig.app + '/templates/';
-          return sourceFile.replace(templatePath, '');
-        }
-      },
-      dist: {
-        files: {
-          '.tmp/scripts/compiled-templates.js': '<%= yeoman.app %>/templates/{,*/}*.hbs'
-        }
-      }
-    },
-    neuter: {
-      app: {
-        options: {
-          filepathTransform: function (filepath) {
-            return yeomanConfig.app + '/' + filepath;
-          }
-        },
-        src: '<%= yeoman.app %>/scripts/app.js',
-        dest: '.tmp/scripts/combined-scripts.js'
-      }
-    }
   });
 
   grunt.registerTask('server', function (target) {

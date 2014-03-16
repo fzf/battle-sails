@@ -41,7 +41,6 @@ var jsFilesToInject = [
   'bower_components/ember/ember.js',
   'bower_components/ember-data/ember-data.js',
 
-  'app/**/*.js',
   //
   // *->    you might put other dependencies like jQuery or Angular here   <-*
   //

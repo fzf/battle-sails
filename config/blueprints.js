@@ -53,7 +53,7 @@ module.exports.blueprints = {
    *
    * `EmailController.index`
    * :::::::::::::::::::::::::::::::::::::::::::::::::::::::
-   * `GET     /email/:id?`        `GET    /email/index/:id?`           
+   * `GET     /email/:id?`        `GET    /email/index/:id?`
    * `POST    /email/:id?`        `POST   /email/index/:id?`
    * `PUT     /email/:id?`        `PUT    /email/index/:id?`
    * `DELETE  /email/:id?`        `DELETE /email/index/:id?`

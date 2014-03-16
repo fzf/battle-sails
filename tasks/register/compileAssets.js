@@ -4,6 +4,9 @@ module.exports = function (grunt) {
 		'jst:dev',
 		'less:dev',
 		'copy:dev',
+		'neuter:app',
+		'emberTemplates',
+		'compass:server',
 		'coffee:dev'
 	]);
 };
