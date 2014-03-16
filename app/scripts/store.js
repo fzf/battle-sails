@@ -1,1 +1,2 @@
-Battle.ApplicationAdapter = DS.FixtureAdapter;
+Battle.ApplicationAdapter = DS.RESTAdapter.extend({
+});

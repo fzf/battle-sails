@@ -1,8 +1,6 @@
 /*global Ember*/
 Battle.User = DS.Model.extend({
-    name: DS.attr('string'),
-
-    zipcode: DS.attr('number')
+    name: DS.attr('string')
 });
 
 // probably should be mixed-in...
@@ -14,26 +12,3 @@ Battle.User.reopen({
     });
   }.property()
 });
-
-// delete below here if you do not want fixtures
-Battle.User.FIXTURES = [
-  
-  {
-    id: 0,
-    
-    name: 'foo',
-    
-    zipcode: 'foo'
-    
-  },
-  
-  {
-    id: 1,
-    
-    name: 'foo',
-    
-    zipcode: 'foo'
-    
-  }
-  
-];

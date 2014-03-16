@@ -6,10 +6,7 @@
  */
 
 module.exports = {
-
-	attributes: {
-
-
-	}
-
+  attributes: {
+    name: 'STRING'
+  }
 };

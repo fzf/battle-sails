@@ -21,6 +21,10 @@
 
 module.exports.routes = {
 
+  'get /users/subscribe': {
+    controller: 'user',
+    action: 'subscribe'
+  },
 
   // Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, etc. depending on your
   // default view engine) your home page.
