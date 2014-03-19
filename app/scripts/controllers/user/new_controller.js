@@ -1,5 +1,4 @@
-Battle.UsersController = Ember.ObjectController.extend({
-  // Implement your controller here.
+Battle.UsersNewController = Ember.ObjectController.extend({
   actions: {
     save: function(event) {
       alert('aotseuhoseuth');

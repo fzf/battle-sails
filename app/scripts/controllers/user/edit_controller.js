@@ -1,5 +1,4 @@
 Battle.UserEditController = Ember.ObjectController.extend({
-  needs: 'user',
   actions: {
     save: function(){
       self = this
@@ -10,4 +9,3 @@ Battle.UserEditController = Ember.ObjectController.extend({
     }
   }
 });
-
