@@ -16,7 +16,8 @@ module.exports.policies = {
   '*': 'sessionAuth',
 
   UserController: {
-    create: true,
+    'create' : true,
+    'new' : true
   },
   SessionsController: {
     '*' : true
