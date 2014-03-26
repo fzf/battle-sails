@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 			},
       {
         expand: true,
-        cwd: 'bower_components/bootstrap/less',
+        cwd: 'assets/vendor/bootstrap/less',
         src: ['bootstrap.less'],
         dest: '.tmp/public/styles/',
         ext: '.css'

@@ -39,7 +39,7 @@ var jsFilesToInject = [
   //
   // *->    you might put other dependencies like jQuery or Angular here   <-*
   //
-  '../bower_components/bootstrap/js/*.js',
+  'vendor/angular/angular.js',
   // All of the rest of your app scripts
   'js/**/*.js'
 ];
