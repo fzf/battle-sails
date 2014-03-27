@@ -11,7 +11,7 @@ module.exports = {
     res.view("sessions/login");
   },
 
-  process: function(req,res){
+  create: function(req,res){
     passport.authenticate('local', function(err, user, info){
       if ((err) || (!user)) {
         res.redirect('/login');
@@ -19,7 +19,7 @@ module.exports = {
       }
       req.logIn(user, function(err){
         if (err) res.redirect('/login');
-        return res.redirect('/');
+        return res.redirect('/users/current');
       });
     })(req, res);
   },

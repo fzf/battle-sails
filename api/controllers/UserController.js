@@ -6,7 +6,11 @@
  */
 
 module.exports = {
-	new: function(req,res){
-    res.view("users/new");
+	new: function(req,res) {
+    res.view('users/new');
   },
+
+  current: function(req,res) {
+    res.view('users/current')
+  }
 };
