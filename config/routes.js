@@ -34,6 +34,7 @@ module.exports.routes = {
   'get /logout': 'SessionsController.logout',
 
   'get /users/current': 'UserController.current',
+  'get /users/subscribe': 'UserController.subscribe',
   'get /register': 'UserController.new'
 
 

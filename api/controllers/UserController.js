@@ -11,6 +11,14 @@ module.exports = {
   },
 
   current: function(req,res) {
-    res.view('users/current')
+    res.view('users/current');
+  },
+
+  subscribe: function(req, res) {
+    User.findOne({ id: req.session.passport.user }, function(err, user) {
+      sails.config.globals.current_users.push({"socketId": req.socket.id, "username": user.username});
+      req.socket.broadcast.emit('user', {"socketId": req.socket.id, "username": user.username});
+      res.json({ 'current_users' : sails.config.globals.current_users });
+    });
   }
 };

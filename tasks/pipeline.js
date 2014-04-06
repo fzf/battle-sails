@@ -40,6 +40,8 @@ var jsFilesToInject = [
   // *->    you might put other dependencies like jQuery or Angular here   <-*
   //
   'vendor/angular/angular.js',
+  'vendor/angular-socket-io/socket.js',
+  'vendor/lodash/dist/lodash.js',
   // All of the rest of your app scripts
   'js/**/*.js'
 ];
