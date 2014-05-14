@@ -35,8 +35,10 @@ module.exports.routes = {
 
   'get /users/current': 'UserController.current',
   'get /users/subscribe': 'UserController.subscribe',
-  'get /register': 'UserController.new'
+  'get /register': 'UserController.new',
 
+  'post /battles': 'BattlesController.create',
+  'get /battles/subscribe': 'BattlesController.subscribe'
 
 
 

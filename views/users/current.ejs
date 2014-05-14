@@ -1,1 +1,1 @@
-<body ng-app='app'>  <div ng-controller='UsersController' data-ng-init="init()">    <ul>      <li ng-repeat="user in users">        {{user.username}}      </li    </ul>  </div></body
+<body ng-app='app'>  <div ng-controller='UsersController' data-ng-init="init()">    <a ng-click="createBattle()">Create Battle</a>    <ul>      <li ng-repeat="battle in battles">        <div ng-click="battle(user)">          {{battle.createdAt}}        </div>      </li>    </ul>  </div></body

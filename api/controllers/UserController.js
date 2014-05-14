@@ -16,8 +16,8 @@ module.exports = {
 
   subscribe: function(req, res) {
     User.findOne({ id: req.session.passport.user }, function(err, user) {
-      sails.config.globals.current_users.push({"socketId": req.socket.id, "username": user.username});
-      req.socket.broadcast.emit('user', {"socketId": req.socket.id, "username": user.username});
+      sails.config.globals.current_users.push({"socketId": req.socket.id, "username": user.username, "id": user.id});
+      req.socket.broadcast.emit('user', {"socketId": req.socket.id, "username": user.username, "id": user.id});
       res.json({ 'current_users' : sails.config.globals.current_users });
     });
   }

@@ -18,6 +18,12 @@ module.exports = {
     password: {
       type: 'string',
       required: true
+    },
+
+    battles: {
+      model: 'battle',
+      via: 'users',
+      dominant: true
     }
   },
 

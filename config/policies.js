@@ -16,8 +16,12 @@ module.exports.policies = {
   '*': 'sessionAuth',
 
   UserController: {
+    'index' : true,
     'create' : true,
     'new' : true
+  },
+  BattleController: {
+    'index' : true
   },
   SessionsController: {
     '*' : true
